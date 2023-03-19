@@ -25,17 +25,17 @@ const AddUser = (props) => {
       });
       return;
     }
-    props.onAddUser(enteredUsername, enteredAge);
+    props.onAddUser(enteredUsername, enteredAge);//add uname and age to list
     setEnteredUsername("");
     setEnteredAge("");
   };
 
   const usernameChangeHandler = (event) => {
-    setEnteredUsername(event.target.value);
+    setEnteredUsername(event.target.value);//save entered username
   };
 
   const ageChangeHandler = (event) => {
-    setEnteredAge(event.target.value);
+    setEnteredAge(event.target.value);//save entered age
   };
 
   const errorHandler = () => {

@@ -25,17 +25,17 @@ const AddUser = (props) => {
       });
       return;
     }
-    props.onAddUser(enteredUsername, enteredAge);//add uname and age to list
+    props.onAddUser(enteredUsername, enteredAge); //add uname and age to list
     setEnteredUsername("");
     setEnteredAge("");
   };
 
   const usernameChangeHandler = (event) => {
-    setEnteredUsername(event.target.value);//save entered username
+    setEnteredUsername(event.target.value); //save entered username
   };
 
   const ageChangeHandler = (event) => {
-    setEnteredAge(event.target.value);//save entered age
+    setEnteredAge(event.target.value); //save entered age
   };
 
   const errorHandler = () => {
@@ -50,7 +50,6 @@ const AddUser = (props) => {
           onConfirm={errorHandler}
         />
       )}
-      (
       <Card className={style.input}>
         <form onSubmit={addUserHandler}>
           <label htmlFor="username">Username</label>
@@ -70,7 +69,6 @@ const AddUser = (props) => {
           <Button type="submit">Add User</Button>
         </form>
       </Card>
-      )
     </div>
   );
 };
